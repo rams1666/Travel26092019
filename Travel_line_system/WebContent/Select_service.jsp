@@ -67,7 +67,7 @@ background: white;
 
 <h3>Select Services</h3>
 
-<form action="s2.html" method="post">
+<form action="seat" method="post">
 <table style="width:100%" name="tab1">
   <tr>
     <th>From:</th>
@@ -105,10 +105,10 @@ request.getAttribute("listData") ;
   <td>${bs.distance }</td>
   <td>${bs.departureTime }</td>
   <td>${bs.journeyTime }</td>
-  </tr>
+   </tr>
 
                 </c:forEach>
- 
+
 </table>
 
 

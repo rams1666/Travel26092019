@@ -75,9 +75,8 @@ public class PassengerDaoImpl implements PassengerDao {
 		try
 		{  
 			con = DBConnection.getConnection();
-			String query = "insert into question values(?,?,?,?,?)"; //Insert user details into the table 'USERS'
+			String query = "insert into passenger values(SQL_passenger_id.nextval,?,?,?,?,?)"; //Insert user details into the table 'USERS'
 			preparedStatement = con.prepareStatement(query); //Making use of prepared statements here to insert bunch of data
-
 			preparedStatement.setInt(1, pid);
 			preparedStatement.setString(2, pname);
 			preparedStatement.setInt(3,age);
